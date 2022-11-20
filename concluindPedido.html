@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<meta charset="utf-8">
+	<title>Concluindo pedido</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<!-- adicionar uma lista (um datalist) para o usuário selecionar o que ele quer, e usa o outyt para somar os valores -->
+	<form action="/page.php">
+	<h2>Escolha seus produtos para finalizarmos a compra!</h2>
+	<h3>Camiseta</h3>
+	<input list="Camiseta" name="Camiseta">
+	<datalist id="Camiseta">
+	<option value="Polo">	
+	<option value="Manga longa">
+	<option value="Cavada">
+	<option value="Nenhum">
+	</datalist>
+	<h3>Calça</h3>
+	<input list="Calça" name="Calça">
+	<datalist id="Calça">
+	<option value="Jeans">
+	<option value="Moletom">
+	<option value="Oxford">
+	<option value="Nenhum">
+	</datalist>
+	<h3>Bermuda</h3>
+	<input list="Bermuda" name="Bermuda">
+	<datalist id="Bermuda">
+	<option value="Tactel">
+	<option value="Jeans">
+	<option value="Moletom">
+	<option value="Nenhum">
+	</datalist>
+	<h3>Calçado</h3>
+	<input list="Calçado" name="Calçado">
+	<datalist id="Calçado">
+	<option value="Sandália">
+	<option value="Tênis">
+	<option value="Bota">
+	<option value="Nenhum">
+	</datalist>
+	<br><br>
+
+	<hr>
+	<h3>Indique aqui quantos produtos você deseja comprar para fazermos a soma:</h3>
+	<form action="/page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		0
+		<input type="number" id="a" name="a" value="50">
+		+100
+		<input type="number" id="b" name="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+		<input type="enviar">
+	</form>
+
+	<hr>
+	<font size="4">
+	<h3>Insira os dados para a entrega:</h3>
+	<label for="name">Destinatário</label>
+	<input type="text" id="name"><br>
+	<label for="tel">Digite um número para contato</label>
+	<input type="tel" id="tel">
+	<h3>Endereço</h3>
+	<label for="cep">CEP</label>
+	<input type="tel" name="cep"><br><br>
+	<label for="endereço4">Estado</label>
+	<input type="text" name="endereço4"><br><br>
+	<label for="endereço5">Cidade</label>
+	<input type="text" name="endereço5"><br><br>
+	<label for="endereço1">Rua</label>
+	<input type="text" name="endereço1"><br><br>
+	<label for="endereço2">Complemento</label>
+	<input type="text" name="endereço2"><br><br>
+	<label for="endereço3">Bairro</label>
+	<input type="text" name="endereço3"><br><br>
+
+	<hr>
+	<h3>Escolha a forma de pagamento</h3><br>
+	<label for="pagamento">Selecione entre Débito, Crédito, Boleto Bancário e Pix</label>
+	<select id="pagamento" name="pagamento">
+		<option value="Débito">Débito</option>
+		<option value="Crédito">Crédito</option>
+		<option value="Boleto Bancário">Boleto Bancário</option>
+		<option value="Pix">Pix</option>
+	</select><br>
+	<input type="submit" value="Realizar pedido">
+	</font>
+	</form>
+</body>
+</HTML>

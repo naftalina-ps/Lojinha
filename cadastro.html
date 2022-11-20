@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cadastro.css">
+	<title>Cadastro</title>
+</head>
+<body>
+	<div id="body">	
+		<img class="img" src="Cadastro.png">
+
+		<header>
+		<nav class="navbar">
+		<ol class="nav-list">
+			<li><a href="inicio.html">Início</a></li>
+			<li><a href="Cadastro.html">Cadastro</a></li>
+			<li><a href="Vendas.html">Vendas</a></li>
+		</ol>
+		</nav>
+		</header>
+
+		<div id="test">
+		<form class="formu">
+			<h3 class="title">Insira suas informações para criar o seu perfil:</h3>
+			<p>Gênero</p>
+			<input type="radio" id="gend" value="Fem">
+			<label for="gend">Feminino</label>
+			<input type="radio" id="gend" value="Masc">
+			<label for="gend">Masculino</label>
+			<input type="radio" id="gend" value="Ndzer">
+			<label for="gend">Não dizer</label><br>
+
+			<label>Número de telefone:</label>
+			<input type="tel" id="number"><br>
+
+			<label>Insira seu CPF:</label>
+			<input type="cpf" id="number"><br>
+
+			<label>Data de nascimento:</label>
+			<label for="datemin">Posterior a 01-01-1990</label>
+			<input type="date" id="datemin" min="1990-01-01"><br>
+
+			<label>Insira seu email</label>
+			<input type="email" id="email">
+			<label>Senha</label>
+			<input type="password" id="password"><br>
+		</form>
+		</div>
+		<div id="test">
+		<form class="itens">
+			<h3 class="title">Declare seus bens (Seguimos a política de privacidade)</h3>
+
+			<input type="checkbox" id="veiculo1" value="bike">
+			<label for="veiculo1">Tenho uma bicicleta</label><br>
+
+			<input type="checkbox" id="veiculo2" value="moto">
+			<label for="veiculo2">Tenho uma moto</label><br>
+
+			<input type="checkbox" id="veiculo3" value="carro">
+			<label for="veiculo3">Tenho um carro</label><br>
+
+			<input type="checkbox" id="moradia"  value="casa">
+			<label for="moradia">Tenho uma casa própria</label><br>
+
+			<input type="checkbox" id="imovel" value="apartamento">
+			<label for="imovel">Tenho um apartamento</label><br>	
+		</form>
+		</div>
+		<div id="test">
+		<form class="arquivo">
+			<h3 class="title">Ficou interessado em trabalhar conosco? Envie seu currículo aqui:</h3>
+			<label for="file">Selecione um arquivo</label>
+			<input type="file" id="file"><br>
+
+			<h3 class="title">Finalizar Cadastro</h3>
+			<form>
+				<a href="inicio.html"><input type="button" class="submit" value="Finalizar" onclick="alerta()"></a>
+			</form> 
+		</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="cadastro.js"></script>
+
+</body>
+</html>

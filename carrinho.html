@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Carrinho.css">
+	<title>Carrinho</title>
+</head>
+<body>
+<div id="body">
+		<header>
+		<nav class="navbar">
+			<ol class="nav-list">
+				<li><a href="inicio.html">Início</a></li>
+				<li><a href="Cadastro.html">Cadastro</a></li>
+				<li><a href="Vendas.html">Vendas</a></li>
+			</ol>
+		</header>
+	</nav>
+	<div class="espaço">
+	<div class="cabecalho">
+		<img class="img" src="Carrinho2.png">
+		<h2 class="title">Selecione os produtos para finalizarmos a compra!</h2>		
+	</div>
+		<div class="list"> 
+			<div id="input">
+				<li class="title2">Calça - R$70,00</li><input type="number" id="calca">
+				<li class="title2">Meia - R$20,00</li><input type="number" id="meia">
+				<li class="title2">Sapato - R$30,00</li><input type="number" id="sapato">
+				<li class="title2">Camisa - R$70,00</li><input type="number" id="camisa">
+				<li class="title2">Acessório - R$40,00</li><input type="number" id="acessorio">
+				</div>
+				<br>
+				<div id="button">
+					<button onclick="calcular()">Finalizar compra</button>
+					<p>Valor total: <span id="total"></span></p>
+					<p>Total de itens: <span id="qntd"></span></p>
+					</div>
+		</div>	
+		<br>
+
+		<div class="dados">
+			<h3 class="title">Insira os dados para a entrega:</h3>
+				<label for="name">Destinatário</label>
+				<input type="text" id="name"><br>
+
+				<label for="tel">Digite um número para contato</label>
+				<input type="tel" id="tel">
+
+				<h3>Endereço</h3>
+				<label for="cep">CEP</label>
+				<input type="tel" name="cep"><br><br>
+
+				<label for="endereço4">Estado</label>
+				<input type="text"><br><br>
+				<label for="endereço5">Cidade</label>
+				<input type="text"><br><br>
+				<label for="endereço1">Rua</label>
+				<input type="text"><br><br>
+				<label for="endereço2">Complemento</label>
+				<input type="text"><br><br>
+				<label for="endereço3">Bairro</label>
+				<input type="text"><br><br>
+		</div>
+
+		<div class="pag">
+			<h3>Escolha a forma de pagamento</h3><br>
+		
+			<label for="pagamento">Selecione a forma de pagamento</label>
+			<select id="pagamento" name="pagamento">
+				<option value="Débito">Débito</option>
+				<option value="Crédito">Crédito</option>
+				<option value="Boleto Bancário">Boleto Bancário</option>
+				<option value="Pix">Pix</option>
+			</select><br>
+		</div>
+
+		<div class="arquivo">
+			<h3 class="title">Finalize a compra</h3>
+			<input type="button" value="Realizar pedido" class="submit" onclick="alerta()">
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="carrim.js"></script>
+</body>
+</html>
